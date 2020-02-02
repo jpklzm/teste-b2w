@@ -7,9 +7,9 @@ import React from 'react'
             <div class="card">
                 <h1 class="card-title">{planet.name}</h1>
                 <div class="card-body">
-                    <p class="card-text">{planet.population}</p>
-                    <p class="card-text">{planet.climate}</p>
-                    <p class="card-text">Featured in {Object.keys(planet.films).length}</p>
+                    <p class="card-text">Population: {planet.population}</p>
+                    <p class="card-text">Climate: {planet.climate}</p>
+                    <p class="card-text">Featured in {Object.keys(planet.films).length} films</p>
                 </div>
             </div>
             </center>
@@ -17,4 +17,4 @@ import React from 'react'
       )
     };
 
-export default Contacts
+export default Planet

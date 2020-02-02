@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Planet from './components/planet/planet.js';
 
     class App extends Component {
       componentDidMount() {
@@ -12,7 +13,7 @@ import React, {Component} from 'react';
 
       render () {
         return (
-          <div>{this.state ? this.state.planet.name : null}</div>
+          <div>{this.state ? <Planet planet={this.state.planet} /> : null}</div>
         );
       }
     }
