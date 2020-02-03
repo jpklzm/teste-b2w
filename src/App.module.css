@@ -9,7 +9,7 @@ img {
 
 .content {
   position:relative;
-  height: 600px;
+  height: 100vh;
 }
 
 .content::after {
