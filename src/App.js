@@ -15,10 +15,11 @@ import Planet from './components/planet/planet.js';
         fetch(requestUrl)
         .then(res => res.json())
         .then((data) => {
-          this.setState({ planet: data })
+          this.setState({ planet: data, color: this.getRandomColor() })
         })
         .catch(console.log)
       }
+
 
       getRandomColor(){
         const getColor = Math.floor(Math.random() * 5 + 1)
@@ -37,13 +38,12 @@ import Planet from './components/planet/planet.js';
       }
 
       componentWillMount() {
-        this.setState({ color: this.getRandomColor() })
         const requestUrl = 'https://swapi.co/api/planets/' + Math.floor(Math.random() * 61 + 1)   +  '/';
         this.getPlanet(requestUrl);
+        this.setState({ color: this.getRandomColor() })
       }
 
       onClick(e) {
-        this.setState({ color: this.getRandomColor() })
         const requestUrl = 'https://swapi.co/api/planets/' + Math.floor(Math.random() * 61 + 1)   +  '/';
         this.getPlanet(requestUrl);
       }
