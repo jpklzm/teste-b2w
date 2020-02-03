@@ -3,13 +3,12 @@ import styles from './App.module.css';
 import Planet from './components/planet/planet.js';
 
     class App extends Component {
-      requestUrl = 'https://swapi.co/api/planets/' + Math.floor(Math.random() * 61 + 1)   +  '/';
-
       constructor(props){
         super()
 
         this.onClick = this.onClick.bind(this);
         this.getPlanet = this.getPlanet.bind(this);
+        this.getRandomColor = this.getRandomColor.bind(this);
       }
 
       getPlanet(requestUrl){
@@ -21,12 +20,30 @@ import Planet from './components/planet/planet.js';
         .catch(console.log)
       }
 
+      getRandomColor(){
+        const getColor = Math.floor(Math.random() * 5 + 1)
+        switch(getColor) {
+          case 1:
+            return styles.red;
+          case 2:
+            return styles.blue;
+          case 3:
+            return styles.green;
+          case 4:
+            return styles.purple;
+          default:
+            return styles.purple;
+        }
+      }
+
       componentWillMount() {
+        this.setState({ color: this.getRandomColor() })
         const requestUrl = 'https://swapi.co/api/planets/' + Math.floor(Math.random() * 61 + 1)   +  '/';
         this.getPlanet(requestUrl);
       }
 
       onClick(e) {
+        this.setState({ color: this.getRandomColor() })
         const requestUrl = 'https://swapi.co/api/planets/' + Math.floor(Math.random() * 61 + 1)   +  '/';
         this.getPlanet(requestUrl);
       }
@@ -37,8 +54,8 @@ import Planet from './components/planet/planet.js';
           <div className={styles.content}>
             <center>
               <img src="https://www.freepnglogos.com/uploads/star-wars-logo-design-14.png" />
-              <div>{this.state ? <Planet planet={this.state.planet} /> : null}</div>
-              <button onClick={this.onClick}>Next</button>
+              <div>{this.state.planet ? <Planet planet={this.state.planet} color={this.state.color} /> : null}</div>
+              <button onClick={this.onClick} className={this.state.color}>Next</button>
             </center>
           </div>
         );

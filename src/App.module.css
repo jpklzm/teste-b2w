@@ -27,10 +27,6 @@ img {
   z-index: -1;   
 }
 
-/* darth red rgb(193,61,61) */
-/* luke blue rgb(30,144,255) */
-/* yoda green rgb(47,249,35) */
-/* windu purple rgb(85,26,139) */
 button {
   color:black;
   margin: 20px;
@@ -41,4 +37,21 @@ button {
   border: none;
   box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+/* darth red rgb(193,61,61) */
+.red {
+  background: rgb(193,61,61);
+}
+/* luke blue rgb(30,144,255) */
+.blue {
+  background: rgb(30,144,255);
+}
+/* yoda green rgb(47,249,35) */
+.green {
+  background: rgb(47,249,35);
+}
+/* windu purple rgb(85,26,139) */
+.purple {
+  background: rgb(85,26,139);
 }

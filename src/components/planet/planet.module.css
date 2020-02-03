@@ -7,7 +7,6 @@
 }
 
 .cardTitle{
-    background: rgb(85,26,139);
     width: 100%;
     padding: 20px 0px 14px 0;
     margin-top: 0;
@@ -24,4 +23,21 @@
 
 .cardFilms{
     padding: 20px;
+}
+
+/* darth red rgb(193,61,61) */
+.card .red {
+    background: rgb(193,61,61);
+}
+/* luke blue rgb(30,144,255) */
+.blue {
+    background: rgb(30,144,255);
+}
+/* yoda green rgb(47,249,35) */
+.green {
+    background: rgb(47,249,35);
+}
+/* windu purple rgb(85,26,139) */
+.purple {
+    background: rgb(85,26,139);
 }

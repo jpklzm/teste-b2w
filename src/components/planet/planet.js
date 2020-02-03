@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './planet.module.css';
 
-    const Planet = ({ planet }) => {
+    const Planet = ({ planet, color }) => {
       return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <h1 className={styles.cardTitle}>{planet.name}</h1>
+                <h1 className={`${color} ${styles.cardTitle}`}>{planet.name}</h1>
                 <div className={styles.cardBody}>
                     <p>Population: {planet.population}</p>
                     <p>Climate: {planet.climate}</p>
