@@ -1,0 +1,35 @@
+center {
+  padding-top: 150px;
+}
+
+.content {
+  position:relative;
+  height: 600px;
+}
+
+.content::after {
+  content: "";
+  background: url(https://media1.tenor.com/images/2f0b1575d1c5560060873c5fbedd5579/tenor.gif)
+  no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+button {
+  color:black;
+  margin: 20px;
+  padding: 10px 20px;
+  background: grey;
+  border-radius: 8px;
+  font-size: larger;
+  border: none;
+  box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}

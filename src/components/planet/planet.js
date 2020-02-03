@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
+import styles from './planet.module.css';
 
     const Planet = ({ planet }) => {
       return (
-        <div>
-            <center>
-            <div class="card">
-                <h1 class="card-title">{planet.name}</h1>
-                <div class="card-body">
-                    <p class="card-text">Population: {planet.population}</p>
-                    <p class="card-text">Climate: {planet.climate}</p>
-                    <p class="card-text">Featured in {Object.keys(planet.films).length} films</p>
+        <div className={styles.container}>
+            <div className={styles.card}>
+                <h1 className={styles.cardTitle}>{planet.name}</h1>
+                <div className={styles.cardBody}>
+                    <p>Population: {planet.population}</p>
+                    <p>Climate: {planet.climate}</p>
+                    <p>Terrain: {planet.terrain}</p>
                 </div>
+                <p className={styles.cardFilms}>Featured in {Object.keys(planet.films).length} films</p>
             </div>
-            </center>
         </div>
       )
     };
