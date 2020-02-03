@@ -22,7 +22,7 @@ import Planet from './components/planet/planet.js';
 
 
       getRandomColor(){
-        const getColor = Math.floor(Math.random() * 5 + 1)
+        const getColor = Math.floor(Math.random() * 4 + 1)
         switch(getColor) {
           case 1:
             return styles.red;
