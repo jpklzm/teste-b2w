@@ -37,6 +37,7 @@ button {
   border: none;
   box-shadow: 8px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  outline: none;
 }
 
 /* darth red rgb(193,61,61) */
