@@ -1,5 +1,10 @@
 center {
-  padding-top: 150px;
+  padding-top: 30px;
+}
+
+img {
+  width: 20%;
+  padding-bottom: 20px;
 }
 
 .content {
@@ -22,11 +27,15 @@ center {
   z-index: -1;   
 }
 
+/* darth red rgb(193,61,61) */
+/* luke blue rgb(30,144,255) */
+/* yoda green rgb(47,249,35) */
+/* windu purple rgb(85,26,139) */
 button {
   color:black;
   margin: 20px;
   padding: 10px 20px;
-  background: grey;
+  background: rgb(85,26,139);
   border-radius: 8px;
   font-size: larger;
   border: none;

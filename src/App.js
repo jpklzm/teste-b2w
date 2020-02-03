@@ -18,6 +18,7 @@ import Planet from './components/planet/planet.js';
         return (
           <div className={styles.content}>
             <center>
+              <img src="https://www.freepnglogos.com/uploads/star-wars-logo-design-14.png" />
               <div>{this.state ? <Planet planet={this.state.planet} /> : null}</div>
               <button>Next</button>
             </center>
