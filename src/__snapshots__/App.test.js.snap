@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check lifecycle 1`] = `
+<div
+  className="content"
+>
+  <center>
+    <img
+      src="https://www.freepnglogos.com/uploads/star-wars-logo-design-14.png"
+    />
+    <div />
+    <button
+      className="purple"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </center>
+</div>
+`;
+
+exports[`renders childrens correctly 1`] = `
+<div
+  class="content"
+>
+  <center>
+    <img
+      src="https://www.freepnglogos.com/uploads/star-wars-logo-design-14.png"
+    />
+    <div />
+    <button
+      class="green"
+    >
+      Next
+    </button>
+  </center>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="content"
+>
+  <center>
+    <img
+      src="https://www.freepnglogos.com/uploads/star-wars-logo-design-14.png"
+    />
+    <div />
+    <button
+      className="purple"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </center>
+</div>
+`;

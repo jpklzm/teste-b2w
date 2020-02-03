@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="card"
+  >
+    <h1
+      className="undefined cardTitle"
+    >
+      Tatooine
+    </h1>
+    <div
+      className="cardBody"
+    >
+      <p>
+        Population: 
+        120000
+      </p>
+      <p>
+        Climate: 
+        Arid
+      </p>
+      <p>
+        Terrain: 
+        Dessert
+      </p>
+    </div>
+    <p
+      className="cardFilms"
+    >
+      Featured in 
+      1
+       films
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders correctly again 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="card"
+  >
+    <h1
+      class="undefined cardTitle"
+    >
+      Tatooine
+    </h1>
+    <div
+      class="cardBody"
+    >
+      <p>
+        Population: 120000
+      </p>
+      <p>
+        Climate: Arid
+      </p>
+      <p>
+        Terrain: Dessert
+      </p>
+    </div>
+    <p
+      class="cardFilms"
+    >
+      Featured in 1 films
+    </p>
+  </div>
+</div>
+`;
